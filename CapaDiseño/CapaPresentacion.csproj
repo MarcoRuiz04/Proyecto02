@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F1EA195-02FB-4A59-8A67-6DA91E62EAF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaDiseño</RootNamespace>
+    <AssemblyName>CapaDiseño</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BIT">
+      <HintPath>..\..\..\..\..\..\..\..\..\BIT\BIT\bin\Debug\BIT.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaDatos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="CapaDatosInicioSesion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="CapaDatosNominas, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CapaDatos\bin\Debug\CapaDatosNominas.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaDiseno, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CapaDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaLogica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="CapaLogicaInicioSesion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\DLL-inicio-de-sesion-master\CapaLogica\bin\Debug\CapaLogicaInicioSesion.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaLogicaNominas">
+      <HintPath>..\CapaLogica\bin\Debug\CapaLogicaNominas.dll</HintPath>
+    </Reference>
+    <Reference Include="ConsultasInteligentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Data">
+      <HintPath>..\..\..\..\..\..\..\..\..\BIT\BIT\bin\Debug\Data.dll</HintPath>
+    </Reference>
+    <Reference Include="DLL- Reporteador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\DLLs\Navegador\CapaDiseno\bin\Debug\DLL- Reporteador.dll</HintPath>
+    </Reference>
+    <Reference Include="InicioSesion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\DLL-inicio-de-sesion-master\InicioSesion\bin\Debug\InicioSesion.dll</HintPath>
+    </Reference>
+    <Reference Include="Logic">
+      <HintPath>..\..\..\..\..\..\..\..\..\BIT\BIT\bin\Debug\Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogos\CatAreas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CatAreas.Designer.cs">
+      <DependentUpon>CatAreas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Asignaciones\EmpConceptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Asignaciones\EmpConceptos.designer.cs">
+      <DependentUpon>EmpConceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Asignaciones\AsigConcepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Asignaciones\AsigConcepto.designer.cs">
+      <DependentUpon>AsigConcepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Liquidacion\Maestro Percepciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Liquidacion\Maestro Percepciones.designer.cs">
+      <DependentUpon>Maestro Percepciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Liquidacion\Percepciones empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Liquidacion\Percepciones empleado.designer.cs">
+      <DependentUpon>Percepciones empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Mantenimientos\ManContratos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Mantenimientos\ManContratos.designer.cs">
+      <DependentUpon>ManContratos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Mantenimientos\ManPuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Mantenimientos\ManPuestos.designer.cs">
+      <DependentUpon>ManPuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polizas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polizas.designer.cs">
+      <DependentUpon>Polizas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Mantenimientos\ManEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Mantenimientos\ManEmpleados.designer.cs">
+      <DependentUpon>ManEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Mantenimientos\ManConceptosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Mantenimientos\ManConceptosR.designer.cs">
+      <DependentUpon>ManConceptosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Mantenimientos\ManAreas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Mantenimientos\ManAreas.designer.cs">
+      <DependentUpon>ManAreas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Asignaciones\AsigAreas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Asignaciones\AsigAreas.designer.cs">
+      <DependentUpon>AsigAreas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CatPrestaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Cat-Prestaciones.designer.cs">
+      <DependentUpon>CatPrestaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CatPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CatPagos.designer.cs">
+      <DependentUpon>CatPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CatDeducciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CatDeducciones.designer.cs">
+      <DependentUpon>CatDeducciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CatComisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CatComisiones.designer.cs">
+      <DependentUpon>CatComisiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Herramientas\HerCambioServidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Herramientas\HerCambioServidor.designer.cs">
+      <DependentUpon>HerCambioServidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI.Designer.cs">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\RepSueldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\RepSueldos.designer.cs">
+      <DependentUpon>RepSueldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\RepEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\RepEmpleados.designer.cs">
+      <DependentUpon>RepEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\RepCierre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\RepCierre.designer.cs">
+      <DependentUpon>RepCierre.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Catalogos\CatAreas.resx">
+      <DependentUpon>CatAreas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CatPrestaciones.resx">
+      <DependentUpon>CatPrestaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Asignaciones\EmpConceptos.resx">
+      <DependentUpon>EmpConceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Asignaciones\AsigConcepto.resx">
+      <DependentUpon>AsigConcepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Liquidacion\Maestro Percepciones.resx">
+      <DependentUpon>Maestro Percepciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Liquidacion\Percepciones empleado.resx">
+      <DependentUpon>Percepciones empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Mantenimientos\ManContratos.resx">
+      <DependentUpon>ManContratos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Mantenimientos\ManPuestos.resx">
+      <DependentUpon>ManPuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polizas.resx">
+      <DependentUpon>Polizas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Mantenimientos\ManEmpleados.resx">
+      <DependentUpon>ManEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Mantenimientos\ManConceptosR.resx">
+      <DependentUpon>ManConceptosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Mantenimientos\ManAreas.resx">
+      <DependentUpon>ManAreas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Asignaciones\AsigAreas.resx">
+      <DependentUpon>AsigAreas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CatPagos.resx">
+      <DependentUpon>CatPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CatDeducciones.resx">
+      <DependentUpon>CatDeducciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CatComisiones.resx">
+      <DependentUpon>CatComisiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Herramientas\HerCambioServidor.resx">
+      <DependentUpon>HerCambioServidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI.resx">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RepSueldos.resx">
+      <DependentUpon>RepSueldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RepEmpleados.resx">
+      <DependentUpon>RepEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RepCierre.resx">
+      <DependentUpon>RepCierre.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refrescar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nuevo documento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
